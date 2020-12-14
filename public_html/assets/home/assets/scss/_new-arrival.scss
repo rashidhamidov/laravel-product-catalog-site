@@ -1,0 +1,141 @@
+.new-arrival{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    @media #{$md}{
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+    @media #{$sm}{
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+    @media #{$xs}{
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+    &.new-arrival2{
+        @media #{$md}{
+            padding-top: 90px;
+            padding-bottom: 80px;
+        }
+        @media #{$sm}{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        @media #{$xs}{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+    &.new-arrival3{
+        padding-top: 0;
+        padding-bottom: 0;
+      
+    }
+    .single-new-arrival{
+        border: 1px solid #F6F8FE;
+        .popular-img{
+            overflow:hidden;
+            position: relative;
+            img {
+                width:100%;
+               }
+           }
+        .popular-caption{
+            padding: 31px 15px;
+            @include transition(.3s);
+            h3 {
+                a{
+                    font-weight: 500;
+                    font-size: 16px;
+                    display: block;
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                    @include transition(.3s);
+                    text-decoration: underline transparent;
+                    font-family: $font_2;
+                    @media #{$sm}{
+                        font-size:17px;
+                    }
+                    @media #{$xs}{
+                        font-size:20px;
+                    }
+                }
+
+            }
+            span {
+                color: #670000;
+                font-size: 20px;
+                font-weight: 600;
+                display: block;
+            
+            }
+        }
+    }
+}
+
+
+
+.single-new-arrival:hover .popular-caption{
+    h3{
+        a{
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+   }
+
+   
+// Tabs Button Style
+
+.properties{
+    .nav-tabs {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #e7ebf2;
+            bottom: 37px;
+            left: 0;
+            @media #{$xs}{
+              position: unset;
+              background: none;
+            }
+        }
+        .nav-item {
+            margin-bottom: 37px;
+            display: block;
+            color: #010A44;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 20px 28px;
+            @media #{$sm}{
+                padding: 18px 18px;
+            }
+            @media #{$xs}{
+                padding: 18px 18px;
+                margin: 0;
+            }
+        }
+    }
+    .nav-link {
+        border: 0;
+        border-bottom: 2px solid transparent;
+    }
+    
+}
+
+.properties .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: $theme-color !important;
+	background-color: #fff;
+	border-bottom: 2px solid $theme-color;
+	z-index: 9;
+	position: relative;
+}

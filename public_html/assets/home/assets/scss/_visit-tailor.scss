@@ -1,0 +1,104 @@
+.visit-tailor-area{
+    background: #F2E1D9;
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-details{
+        width: 26%;
+        padding: 20px 20px 20px 60px;
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        span{
+            margin-bottom: 22px; 
+            display: block;
+            color: #7d8da4;
+        }
+        h2 {
+            font-size: 40px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            @media #{$lg}{
+                font-size: 50px;
+            }
+            @media #{$sm}{
+                font-size: 50px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+        }
+        p{
+            color: #010A44;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+    }
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.png);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 570px;
+        width: 55%;
+         @media #{$lg}{
+            width: 49%;
+        }
+         @media #{$xs}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 500px;
+        }
+
+    }
+}
+
+// Progress Bar
+
+

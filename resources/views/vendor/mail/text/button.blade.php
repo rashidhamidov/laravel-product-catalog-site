@@ -1,0 +1,1 @@
+{{ 'Şifreyi Sıfırla' }}: {{ $url }}

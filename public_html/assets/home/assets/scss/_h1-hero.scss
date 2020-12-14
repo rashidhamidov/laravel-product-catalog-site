@@ -1,0 +1,198 @@
+
+.slider-height {
+    min-height: 820px;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$md}{
+        min-height: 600px;
+    }
+    @media #{$xs}{
+        min-height: 650px;
+    }
+}
+
+.slider-height2{
+    min-height: 275px;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$xs}{
+        min-height: 300px;
+    }
+}
+.btn1 {
+    padding: 25px 0px;
+    @media #{$md}{
+        padding: 25px 0;
+    }
+}
+
+.slider-bg1{
+    background-image: url(../img/hero/h1_hero.png);
+}
+.slider-bg2{
+    background-image: url(../img/hero/h2_hero1.png);
+}
+.slider-area{
+    margin-top: -1px;
+    padding-right: 50px;
+    padding-bottom: 90px;
+    @media #{$lg}{
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    @media #{$md}{
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    @media #{$sm}{
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    @media #{$xs}{
+        padding-right: 0;
+        padding-bottom: 0px;
+    }
+    background: #F2E1D9;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 180px;
+        height: 100px;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        @media #{$lg}{
+            width: 100px;
+            height: 40px;
+        }
+        @media #{$sm}{
+            width: 100px;
+            height: 40px;
+        }
+        @media #{$md}{
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .hero__caption{
+       
+        padding:39px 70px 56px 68px;
+        margin-left: -25px;
+        margin-right: 25px;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        @media #{$xs}{
+            padding: 39px 24px 55px 44px
+        }
+        &.hero__caption2 {
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+            position: unset;
+            background: none;
+            h1{
+                color: #fff;
+                font-size: 50px;
+                @media #{$xs}{
+                    font-size: 40px;
+                }
+            }
+        }
+        span{
+            color: #7F85A8;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 70px;
+            font-weight: 900;
+            margin-bottom: 14px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            @media #{$lg}{
+                font-size: 60px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 50px;
+                line-height: 1.2;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 39px;
+            margin-bottom: 25px;
+            padding-right: 49px;
+            @media #{$md}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+           
+        }
+    }
+
+}
+
+//
+
+.hero-overly1 {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        // background-color:rgba(141, 129, 131,.4);
+        @extend %overlay1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+.hero-overly2{
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        // background-color:rgba(141, 129, 131,.4);
+        @extend %overlay2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+
+// Another Hero Page
+.slider-area{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
